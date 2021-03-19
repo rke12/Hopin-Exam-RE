@@ -1,0 +1,25 @@
+{
+  "name": "hopin-exam-re",
+  "version": "1.0.0",
+  "description": "Hopin Quality Engineer challenge",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:api": "cypress run --project ./api-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rke12/Hopin-Exam-RE.git"
+  },
+  "author": "Rachel Egan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rke12/Hopin-Exam-RE/issues"
+  },
+  "homepage": "https://github.com/rke12/Hopin-Exam-RE#readme"
+}
