@@ -44,6 +44,11 @@ describe('Testing API response body contains key fields', () => {
       expect(response.body).property('name').eq(valid_body["name"]);
       expect(response.body).property('timestamp').eq(todays_date);
 
+      const customer_body = response_body["customers"][0];
+      expect(customer_body).property('id').to.not.be.oneOf([null, ""]);
+      expect(customer_body).property('name').to.not.be.oneOf([null, ""]);
+      expect(customer_body).property('employees').to.not.be.oneOf([null, ""]);
+      expect(customer_body).property('size').to.not.be.oneOf([null, ""]);
     })
   })
 })
