@@ -1,18 +1,27 @@
+//CSS selectors for Welcome Screen
+const welcomeScreen = "div > h1";
+const nameTextBox = "#name";
+const submitButton = "input[type=button]";
+
 class WelcomeScreen {
     getWelcomeScreen() {
         return cy.visit('http://localhost:3000');
     }
 
     checkOnPage() {
-        return cy.get("div > h1");
+        cy.get(welcomeScreen).should('be.visible');
     }
 
     checkTextBoxExists() {
-        return cy.get("#name");
+        cy.get(nameTextBox).should('be.visible');
+    }
+
+    enterName() {
+        cy.get(nameTextBox).type('Rachel Egan');
     }
 
     clickSubmitButton() {
-        return cy.get("input[type=button]");
+        cy.get(submitButton).click();
     }
 
 }
