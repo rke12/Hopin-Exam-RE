@@ -8,6 +8,8 @@ Clone the repo and run:
 npm install
 ```
 
+Further instructions in how to run the UI and API tests can be found in the readme files in their respective folders.
+
 Assumptions made:
 - Line endings: LF
 - Noted in the requirements.md that the **# of Employees** field says "if greater than 10 and less than or equal 1000" size of company should display as "Medium". I am making an assumption that this is a typo so all work done will be of the assumption that it should read as "great than 100 and less than or equal to 1000". 
