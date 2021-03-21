@@ -1,3 +1,8 @@
+/* describe('My First Test', () => {
+    it('Does not do much!', () => {
+      expect(true).to.equal(true)
+    })
+  }) */
 var valid_body = {"name":"Rachel Egan"}
 var invalid_body = {"name":"$%!!"}
 

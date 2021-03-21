@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:api": "cypress run --project ./api-tests"
+    "cypress:api": "cypress run --project ./api-tests",
+    "cypress:ui": "cypress run --project ./ui-tests"
   },
   "repository": {
     "type": "git",
