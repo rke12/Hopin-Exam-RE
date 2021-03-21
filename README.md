@@ -8,7 +8,7 @@ Clone the repo and run:
 npm install
 ```
 
-Further instructions in how to run the UI and API tests can be found in the readme files in their respective folders.
+Further instructions on how to run the UI and API tests can be found in the readme files in their respective folders.
 
 Assumptions made:
 - Line endings: LF
