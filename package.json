@@ -4,14 +4,18 @@
   "description": "Hopin Quality Engineer challenge",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^6.8.0"
+    "cypress": "^6.8.0",
+    "cypress-cucumber-preprocessor": "^4.0.1"
   },
-  "devDependencies": {},
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:api": "cypress run --project ./api-tests",
-    "cypress:ui": "cypress run --project ./ui-tests"
+    "cypress:ui": "cypress run --project ./ui-tests",
+    "cypress:test-ui": "cypress run --spec **/*.feature"
   },
   "repository": {
     "type": "git",
