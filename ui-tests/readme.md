@@ -11,6 +11,11 @@ To run the UI tests please run the following command in the terminal:
 npm run cypress:open
 ```
 
+To run the UI tests in the terminal (without opening the Cypress GUI) please run the following command:
+```
+npm run cypress:ui
+```
+
 The GUI for Cypress will open where you will be able to see the three UI tests running one after the other.  
 
 ### UI Tests Explained

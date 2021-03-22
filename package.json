@@ -11,9 +11,9 @@
     "nonGlobalStepDefinitions": true
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:api": "cypress run --project ./api-tests",
+    "cypress:ui": "cypress run",
     "cypress:test-ui": "cypress run --spec **/*.feature"
   },
   "repository": {
