@@ -11,14 +11,14 @@ To run the UI tests please run the following command in the terminal:
 npm run cypress:open
 ```
 
+This will open the Cypress GUI. Click on the 'uiTests.feature' link. This will open a browser window and will run the automated tests.  
+
 To run the UI tests in the terminal (without opening the Cypress GUI) please run the following command:
 ```
 npm run cypress:ui
-```
-
-The GUI for Cypress will open where you will be able to see the three UI tests running one after the other.  
+``` 
 
 ### UI Tests Explained
 The UI tests are written using Cucumber to follow Behaviour Driven Development. You will find the three scenarios in the "Cypress/Integration" folder in the file "uiTests.feature".  
-This file will clearly outlines the three scenarios that are executed.  
+This file will clearly outline the three scenarios that are executed.  
 The three scenarios follow the requirements set out, which check that the user can enter a name, view the Customer details, and that the user remains on the Welcome screen if they do not enter a name.
