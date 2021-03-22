@@ -3,6 +3,8 @@ const welcomeScreen = "div > h1";
 const nameTextBox = "#name";
 const submitButton = "input[type=button]";
 
+const nameOfUser = 'Rachel Egan';
+
 class WelcomeScreen {
     getWelcomeScreen() {
         return cy.visit('http://localhost:3000');
@@ -17,7 +19,7 @@ class WelcomeScreen {
     }
 
     enterName() {
-        cy.get(nameTextBox).type('Rachel Egan');
+        cy.get(nameTextBox).type(nameOfUser);
     }
 
     clickSubmitButton() {

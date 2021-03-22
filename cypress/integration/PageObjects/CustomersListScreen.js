@@ -4,6 +4,8 @@ const userName = "div > p > b:nth-child(1)";
 const customerTable = "div > table > tbody";
 const firstCustomer = "div > table > tbody > tr:nth-child(1) > td:nth-child(1)";
 
+const nameEntered = 'Rachel Egan';
+
 class CustomersListScreen {
     checkOnPage() {
         cy.get(customerScreen).should('be.visible');
@@ -13,9 +15,12 @@ class CustomersListScreen {
         cy.get(userName).should('be.visible');
     }
 
+    checkNameIsCorrect() {
+        cy.get(userName).should('have.text', nameEntered);
+    }
+
     isCustomerListVisible() {
-        cy.get(customerTable);        
-        expect(customerTable).to.not.be.oneOf([null, ""]);
+        cy.get(customerTable).should('be.visible');
     }
 
     clickFirstCustomer() {

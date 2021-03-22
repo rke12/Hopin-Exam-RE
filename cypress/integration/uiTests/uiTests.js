@@ -35,6 +35,7 @@ Then('I am on the Customers List screen', () => {
 
 And('I see the name is visible', () => {
      customersListScreen.returnNameEntered();
+     customersListScreen.checkNameIsCorrect();
 })
 
 And('I see the Customer List is not empty', () => {
@@ -56,13 +57,10 @@ And("I see the mandatory Customer Details are visible", () => {
     //validate No. Of Emoloyees is visible
     customerDetailsScreen.isNoOfEmployeesVisible();
     
-
     //validate company size is visible
     customerDetailsScreen.isCompanySizeVisible();
 })
 
-Then('I see the alert message', () => {
-    cy.on('window:alert', (text) => {
-        expect(text, alertBoxMessage);
-    })
+Then('I am still on the Welcome Screen', () => {
+    welcomeScreen.checkOnPage();
 })
