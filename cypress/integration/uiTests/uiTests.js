@@ -2,7 +2,6 @@ import { Given , And , When , Then} from "cypress-cucumber-preprocessor/steps";
 import WelcomeScreen from '../PageObjects/WelcomeScreen.js';
 import CustomersListScreen from '../PageObjects/CustomersListScreen.js';
 import CustomerDetailsScreen from "../PageObjects/CustomerDetailsScreen.js";
-import { expect } from "chai";
 
 const welcomeScreen = new WelcomeScreen();
 const customersListScreen = new CustomersListScreen();
